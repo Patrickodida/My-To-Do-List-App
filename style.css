@@ -1,0 +1,151 @@
+:root {
+    --ff-body: "Mona Sans",
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    --fs-large: 2.5rem;
+    --fs-medium: 1.325rem;
+    --fs-small: 1rem;
+
+    --fw-bold: 700;
+    --fw-light: 400;
+
+    --clr-primary: #F04476;
+    --clr-secondary: #2F0602;
+    --clr-primary-light: #B58E8D;
+    --clr-secondary-light: #441F1A;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-body);
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-light);
+
+    padding: 5em 0;
+}
+
+h1.heading {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold);
+    display: inline-block;
+    
+}
+
+h2 {
+    display: inline-block;
+}
+
+.container {
+    width: 60%;
+    max-width: 680px;
+    margin: 0 auto;
+
+    background: var(--clr-secondary);
+    border-radius: 1.75em;
+}
+
+.task-wrapper {
+    display: inline-block;
+    text-align: start;
+}
+
+.content-wrapper {
+    display: inline-block;
+    border: 1px solid var(--clr-primary);
+    border-radius: 1.25em;
+    padding: 1.25em 0.625em;
+    margin: 1.25em 1.25em;
+}
+
+.todo-list {
+    text-align: center;
+    border: 1px solid var(--clr-primary);
+}
+
+label {
+    display: inline-block;
+    font-size: var(--fs-medium);
+    margin-bottom: 0.625em;
+}
+
+ul li {
+    list-style-position: inside;
+    padding: 0.625em;
+}
+
+li i {
+    margin-left: 0.325em;
+}
+
+ul>li>span:first-child{
+    margin-right: 1.25em;
+}
+
+/* give edit icon a color */
+.bx-edit-alt{
+    color: #2C7865;
+}
+
+/* Give the delete Icon color */
+.bx-trash{
+    color: #E72929;
+}
+
+/* Give the done Icon color */
+.bx-check-circle {
+    color: var(--clr-primary);
+}
+
+input[type="text"],
+label,
+button,
+h1,
+h2,
+ul {
+    border: 1px solid var(--clr-primary);
+    border-radius: 1.25em;
+    padding: 0.25em 0.625em;
+}
+
+input[type="text"],
+button {
+    color: var(--clr-secondary);
+    background: var(--clr-primary-light);
+    font-size: var(--fs-medium);
+    border: 0;
+    outline: 0;
+    padding: 0.25em 0.625em;
+    border-radius: 1.25em;
+}
+
+input {
+    color: var(--clr-primary);
+    background: var(--clr-primary-light);
+}
+
+button {
+    padding: 0.25em 1em;
+    margin-top: 0.625em;
+    color: var(--clr-secondary);
+    background: var(--clr-primary);
+}
+
+/* Page Style */
+.page-style {
+    display: inline-block;
+    width: 30%;
+    height: 0.325em;
+    border: 1px solid var(--clr-primary-light);
+    background-color: var(--clr-primary-light);
+    border-radius: 1.25em;
+    padding: 0.025em;
+    margin-bottom: 1em;
+}
