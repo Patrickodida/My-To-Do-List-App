@@ -147,6 +147,10 @@ button {
 }
 
 @media (max-width: 540px) {
+  .container {
+      width: 80%;
+  }
+
   h1.heading {
     font-size: 1.625rem;
   }
